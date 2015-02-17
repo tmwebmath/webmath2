@@ -1,7 +1,5 @@
-forms.py:
+# Suppression des double points dans les formulaires
+Pour supprimer les doubles points : https://github.com/torchbox/wagtail/issues/130
 
-pour supprimer les doubles points : https://github.com/torchbox/wagtail/issues/130
-
-
-Pour creer des utilisateur:
-via l'administration -> user:admin password:12345
+# Créer des utilisateurs
+Via l'administration -> user:admin password:12345
