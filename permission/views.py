@@ -2,10 +2,13 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required, user_passes_test
 
 def is_teacher(user):
-    user.groups.filter(name='teachers').exists()
+    return user.groups.filter(name='teachers').exists()
     
 def is_student(user):
-    user.groups.filter(name='students').exists()
+    return user.groups.filter(name='students').exists()
+    
+# def teacher_required(view):
+#     return user_passes_test(login_required(view), is_teacher)
 
 @login_required
 def home(request):
