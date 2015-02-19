@@ -10,6 +10,8 @@
     
     <h1>Veuillez remplir les champs suivants:</h1>
     
+    <button onclick="window.location.href='{% url 'common:register' %}'">S'inscrire</button>
+    
     {% if erreur %}
     <p><strong>Connexion échouée</strong></p>
     {% endif %}
