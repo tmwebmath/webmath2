@@ -9,12 +9,19 @@ utiliseurs définie dans l'application `common`, il faut procéder comme suit :
     ```{bash}
     $ git clone https://github.com/<username>/webmath2.git
     ```
-3.  Intégrer votre application Django dans l'application globale. Un moyen de procéder est de copier votre dossier 
+3.  Intégrer votre application Django dans l'application globale en copiant votre dossier d'application. 
 4.  Ajouter le dépôt Upstream (https://github.com/tmwebmath/webmath2.git)
     ```{bash}
     $ git remote add upstream https://github.com/tmwebmath/webmath2.git
     ```
-4.  travailler dans la branche `develop` 
+5.  Tirer les branches distantes depuis `origin` vers votre dépôt locale
+    ```{bash}
+    $ git checkout --track origin/daves_branch
+    ```
+6.  Mettre à jour vos branches depuis le dépôt `upstream` (https://help.github.com/articles/syncing-a-fork/) :
+
+    
+4.  travailler dans la branche `develop` ou créer de nouvelles branches à partir de la branche `develop`.
 5.  Faire des *Pull Requests* de origin:develop ==> upstream:develop
 
 # Question 
