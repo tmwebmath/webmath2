@@ -55,9 +55,9 @@ def register(request):
                 account.user = user # Liaison au compte user
                 account.save()
                 
-                return HttpResponse("Utilisateur enregistré")
-            else:
-                return HttpResponse("Errreurr")
+                return redirect('common:connexion')
+            except Exception as e:
+                return HttpResponse("Erreur non gérée : {}".format(str(e)))
 
     else:
         registerform = RegisterForm()
